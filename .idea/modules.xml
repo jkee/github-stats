@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea_modules/github-stats.iml" filepath="$PROJECT_DIR$/.idea_modules/github-stats.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea_modules/github-stats-build.iml" filepath="$PROJECT_DIR$/.idea_modules/github-stats-build.iml" />
     </modules>
   </component>
 </project>
