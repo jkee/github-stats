@@ -7,6 +7,7 @@ package org.tarnavsky.langstats
 class Repository {
 
   var id: Int = 0
+  var name: String = null
   var owner: String = null
   var fork: Boolean = false
   var url: String = null
@@ -15,8 +16,12 @@ class Repository {
     this.id = id
   }
 
+  def setName(name: String) {
+    this.name = name
+  }
+
   override def toString = {
-    "Repository: " + "id: " + id + " url: " + url
+    "Repository: " + "id: " + id + " name: " + name
   }
 
 }

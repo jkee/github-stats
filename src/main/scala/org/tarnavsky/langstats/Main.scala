@@ -4,7 +4,7 @@ import com.ning.http.client.AsyncHttpClient
 import org.apache.log4j.xml.DOMConfigurator
 import java.util
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
-import com.fasterxml.jackson.databind.{ObjectMapper, Module}
+import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper, Module}
 import com.fasterxml.jackson.core.`type`.TypeReference
 
 /**
@@ -24,6 +24,7 @@ object Main extends Logging {
     client.close()
 
     val mapper = new ObjectMapper()
+    mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
     val module: Module = DefaultScalaModule
     mapper.registerModule(module)
     val list: util.List[Repository] =
