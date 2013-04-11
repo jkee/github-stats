@@ -4,7 +4,7 @@ package org.tarnavsky.langstats
  * @author jkee
  */
 
-class Repository {
+class Rep {
 
   var id: Int = 0
   var name: String = null
@@ -21,7 +21,7 @@ class Repository {
   }
 
   override def toString = {
-    "Repository: " + "id: " + id + " name: " + name
+    "Rep: " + "id: " + id + " name: " + name
   }
 
 }
